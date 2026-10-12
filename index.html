@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Thiệp Mời Dự Lễ Tốt Nghiệp | Võ Thị Ngọc Hồng 🎓</title>
+
+  <!-- SEO & Social Sharing (Open Graph / Zalo / Facebook / Messenger) -->
+  <meta name="description"
+    content="Thân mời bạn đến chung vui cùng Võ Thị Ngọc Hồng trong ngày tốt nghiệp! Chủ Nhật, ngày 25 tháng 10 năm 2026 tại 20 Tăng Nhơn Phú, TP. Hồ Chí Minh.">
+  <meta name="keywords" content="thiệp tốt nghiệp, Võ Thị Ngọc Hồng, graduation invitation, lễ tốt nghiệp 2026">
+  <meta name="author" content="Võ Thị Ngọc Hồng">
+  <meta property="og:title" content="🎓 THƯ MỜI DỰ LỄ TỐT NGHIỆP - Võ Thị Ngọc Hồng">
+  <meta property="og:description"
+    content="Sự hiện diện của bạn sẽ là niềm vui và kỷ niệm đáng nhớ đối với mình. Thân mời bạn đến chung vui!">
+  <meta property="og:image" content="assets/images/ngoc-hong.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FAF8F4">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <!-- Google Fonts: Editorial & Handwriting -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Audio Player Control -->
+  <div class="music-floating" id="musicBtn" role="button" aria-label="Bật hoặc tắt nhạc nền" tabindex="0">
+    <div class="music-disc" id="musicDisc">
+      <svg class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+      <div class="sound-wave">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <span class="music-tooltip">Nhạc nền</span>
+  </div>
+
+  <!-- Audio Element -->
+  <audio id="bgMusic" src="assets/music/background.mp3" preload="auto" loop></audio>
+
+  <!-- Ambient Golden Sparkles & Floating Petals Container -->
+  <div class="ambient-fx" id="ambientFx" aria-hidden="true"></div>
+
+  <!-- Main Experience Wrapper -->
+  <main class="experience-stage" id="stage">
+
+    <!-- ==================== STAGE 1: ENVELOPE INTRO ==================== -->
+    <section class="envelope-scene" id="envelopeScene">
+      <div class="envelope-header-text">
+        <span class="invitation-subtitle">Trân trọng kính mời</span>
+        <h1 class="invitation-main-title">Một Lễ Tốt Nghiệp Đặc Biệt</h1>
+        <p class="invitation-for">Dành riêng cho những người bạn yêu quý</p>
+      </div>
+
+      <!-- 3D Realistic Luxury Envelope -->
+      <div class="envelope-3d-wrapper">
+        <div class="envelope" id="envelope">
+
+          <!-- 1. Back Interior Paper (Lining) -->
+          <div class="envelope-back-lining">
+            <div class="lining-pattern"></div>
+          </div>
+
+          <!-- 2. The Insert Card that rises out of envelope -->
+          <div class="envelope-card-insert" id="cardInsert">
+            <div class="insert-card-content">
+              <span class="insert-cap-icon">🎓</span>
+              <span class="insert-tag">THIỆP MỜI LỄ TỐT NGHIỆP</span>
+              <h3 class="insert-name">Võ Thị Ngọc Hồng</h3>
+              <div class="insert-filigree"><span></span>✦<span></span></div>
+              <span class="insert-date">25 • 10 • 2026</span>
+            </div>
+          </div>
+
+          <!-- 3. Envelope Pocket (Front Sides & Bottom) -->
+          <div class="envelope-pocket">
+            <div class="pocket-left"></div>
+            <div class="pocket-right"></div>
+            <div class="pocket-bottom"></div>
+          </div>
+
+          <!-- 4. Recipient Name Foil Stamped on Front Pocket -->
+          <div class="envelope-body-emboss">
+            <div class="emboss-inner">
+              <span class="emboss-eyebrow">Thư Mời Tốt Nghiệp</span>
+              <h2 class="emboss-recipient">Võ Thị Ngọc Hồng</h2>
+              <div class="emboss-divider">
+                <span class="divider-line"></span>
+                <span class="divider-diamond">✦</span>
+                <span class="divider-line"></span>
+              </div>
+              <span class="emboss-date">25 • 10 • 2026</span>
+            </div>
+          </div>
+
+          <!-- 5. 3D Top Flap with Wax Seal -->
+          <div class="envelope-flap" id="envelopeFlap">
+            <div class="flap-outer">
+              <div class="flap-crease"></div>
+            </div>
+
+            <!-- Luxury Wax Seal -->
+            <div class="wax-seal" id="waxSeal" role="button" aria-label="Mở phong bì" tabindex="0">
+              <div class="seal-glow"></div>
+              <div class="seal-body">
+                <div class="seal-inner-ring">
+                  <span class="seal-monogram">NH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Interaction Call to Action -->
+      <div class="open-action-prompt" id="openPrompt">
+        <div class="touch-indicator">
+          <svg class="hand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v8"></path>
+            <path d="m4.93 10.93 1.41 1.41"></path>
+            <path d="M2 18h2"></path>
+            <path d="M20 18h2"></path>
+            <path d="m19.07 10.93-1.41 1.41"></path>
+            <path d="M22 22H2"></path>
+            <path d="m8 22 4-10 4 10"></path>
+          </svg>
+        </div>
+        <button type="button" class="btn-open-envelope" id="btnOpenEnvelope">
+          <span class="btn-shine"></span>
+          <span class="btn-text">Chạm để mở thiệp</span>
+          <span class="btn-sparkle">✨</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== STAGE 2: THE INVITATION CARD ==================== -->
+    <section class="card-presentation" id="cardPresentation" aria-hidden="true">
+
+      <!-- Card Container with 3D Depth & Realistic Paper Shadow -->
+      <article class="invitation-card" id="invitationCard">
+
+        <!-- Luxury Foil Stamped Border & Corner Ornaments -->
+        <div class="card-foil-border">
+          <div class="corner-ornament top-left">
+            <svg viewBox="0 0 60 60">
+              <path
+                d="M4,4 L56,4 M4,4 L4,56 M14,14 L46,14 M14,14 L14,46 M4,20 C10,20 20,10 20,4 M4,40 C20,40 40,20 40,4"
+                fill="none" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+          </div>
+          <div class="corner-ornament top-right">
+            <svg viewBox="0 0 60 60">
+              <path
+                d="M4,4 L56,4 M4,4 L4,56 M14,14 L46,14 M14,14 L14,46 M4,20 C10,20 20,10 20,4 M4,40 C20,40 40,20 40,4"
+                fill="none" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+          </div>
+          <div class="corner-ornament bottom-left">
+            <svg viewBox="0 0 60 60">
+              <path
+                d="M4,4 L56,4 M4,4 L4,56 M14,14 L46,14 M14,14 L14,46 M4,20 C10,20 20,10 20,4 M4,40 C20,40 40,20 40,4"
+                fill="none" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+          </div>
+          <div class="corner-ornament bottom-right">
+            <svg viewBox="0 0 60 60">
+              <path
+                d="M4,4 L56,4 M4,4 L4,56 M14,14 L46,14 M14,14 L14,46 M4,20 C10,20 20,10 20,4 M4,40 C20,40 40,20 40,4"
+                fill="none" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card-inner-canvas">
+
+          <!-- 1. Header & Cap Symbol -->
+          <header class="card-header">
+            <div class="graduation-icon-wrap">
+              <svg class="grad-cap-svg" viewBox="0 0 64 64" fill="none">
+                <path d="M32 8L4 22L32 36L60 22L32 8Z" fill="url(#goldGrad)" stroke="#C9A86A" stroke-width="1.5"
+                  stroke-linejoin="round" />
+                <path d="M14 27.5V42C14 42 21 49 32 49C43 49 50 42 50 42V27.5" stroke="#C9A86A" stroke-width="2"
+                  stroke-linecap="round" />
+                <path d="M52 24.5V45C52 47 50.5 48.5 49 48.5C47.5 48.5 46 47 46 45V28" stroke="#C9A86A"
+                  stroke-width="1.5" />
+                <circle cx="49" cy="52" r="3" fill="#C9A86A" />
+                <defs>
+                  <linearGradient id="goldGrad" x1="4" y1="8" x2="60" y2="36" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EED7A1" />
+                    <stop offset="0.5" stop-color="#C9A86A" />
+                    <stop offset="1" stop-color="#A88242" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <p class="invitation-tagline">GRADUATION INVITATION</p>
+            <h2 class="card-title">THƯ MỜI DỰ LỄ TỐT NGHIỆP</h2>
+
+            <div class="gold-filigree-divider">
+              <span class="filigree-line"></span>
+              <span class="filigree-flower">❀</span>
+              <span class="filigree-line"></span>
+            </div>
+          </header>
+
+          <!-- 2. Central Portrait of Võ Thị Ngọc Hồng -->
+          <section class="portrait-section">
+            <div class="portrait-arch-frame">
+              <div class="frame-halo"></div>
+              <div class="frame-border-outer"></div>
+              <div class="frame-border-inner">
+                <div class="portrait-img-box">
+                  <img src="assets/images/ngoc-hong.jpg" alt="Chân dung tốt nghiệp Võ Thị Ngọc Hồng"
+                    class="portrait-img" id="portraitImg" loading="eager"
+                    onerror="this.onerror=null; this.src='assets/images/ngoc-hong.png';">
+                </div>
+              </div>
+              <!-- Gold Leaf Embellishment -->
+              <div class="frame-leaves-left">
+                <svg viewBox="0 0 50 100">
+                  <path d="M40,90 Q10,50 35,10 M25,40 Q5,30 20,20 M30,65 Q8,55 22,45" fill="none" stroke="#C9A86A"
+                    stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="frame-leaves-right">
+                <svg viewBox="0 0 50 100">
+                  <path d="M10,90 Q40,50 15,10 M25,40 Q45,30 30,20 M20,65 Q42,55 28,45" fill="none" stroke="#C9A86A"
+                    stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Protagonist Name Display -->
+            <div class="graduate-identity">
+              <span class="graduate-prefix">Tân Cử Nhân</span>
+              <h1 class="graduate-name shimmer-text">Võ Thị Ngọc Hồng</h1>
+              <p class="graduate-class">Khóa 2026 • Hành trình vươn tới sự xuất sắc</p>
+            </div>
+          </section>
+
+          <!-- 3. Heartfelt Message -->
+          <section class="message-section">
+            <blockquote class="lead-quote">
+              “Thân mời bạn đến chung vui cùng mình trong ngày tốt nghiệp! ❤️”
+            </blockquote>
+            <p class="message-desc">
+             Một chặng đường đại học với biết bao kỷ niệm, niềm vui, thử thách và những nỗ lực không ngừng nghỉ cuối cùng cũng đã khép lại. Lễ tốt nghiệp không chỉ đánh dấu sự kết thúc của những năm tháng sinh viên tươi đẹp, mà còn là khởi đầu cho một hành trình mới với nhiều ước mơ và hy vọng phía trước.
+
+Trong khoảnh khắc đặc biệt này, mình mong được chia sẻ niềm vui và hạnh phúc cùng những người thân yêu, bạn bè và những người đã đồng hành trong suốt chặng đường vừa qua. Sự hiện diện cùng những lời chúc tốt đẹp của bạn sẽ là món quà quý giá, giúp ngày tốt nghiệp của mình thêm trọn vẹn, ý nghĩa và trở thành một kỷ niệm thanh xuân thật khó quên. 💐🎓
+            </p>
+          </section>
+
+          <!-- 4. Event Details Luxury Card -->
+          <section class="event-details-card">
+            <div class="details-card-header">
+              <span class="details-badge">SAVE THE DATE</span>
+            </div>
+
+            <div class="datetime-grid">
+              <!-- Big Day Block -->
+              <div class="date-highlight-box">
+                <span class="date-month">THÁNG 10</span>
+                <span class="date-day">25</span>
+                <span class="date-year">2026</span>
+                <span class="date-weekday">CHỦ NHẬT</span>
+              </div>
+
+              <!-- Time & Graduate info -->
+              <div class="time-venue-info">
+                <div class="info-row">
+                  <div class="info-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">Thời gian:</span>
+                    <strong class="info-value">09:00 Sáng</strong>
+                  </div>
+                </div>
+
+                <div class="info-row">
+                  <div class="info-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">Người tốt nghiệp:</span>
+                    <strong class="info-value">Võ Thị Ngọc Hồng</strong>
+                  </div>
+                </div>
+
+                <div class="info-row">
+                  <div class="info-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">Địa điểm tổ chức:</span>
+                    <address class="info-value venue-address">
+                      20 Tăng Nhơn Phú, phường Phước Long B, TP. Hồ Chí Minh
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps Button -->
+            <div class="map-action-wrap">
+              <a href="https://www.google.com/maps/search/?api=1&query=20+T%C4%83ng+Nh%C6%A1n+Ph%C3%BA%2C+ph%C6%B0%E1%BB%9Dng+Ph%C6%B0%E1%BB%9Bc+Long+B%2C+TP.+H%E1%BB%93+Ch%C3%AD+Minh"
+                target="_blank" rel="noopener noreferrer" class="btn-map" id="btnGoogleMap">
+                <span class="map-btn-bg"></span>
+                <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                  <line x1="9" y1="3" x2="9" y2="18"></line>
+                  <line x1="15" y1="6" x2="15" y2="21"></line>
+                </svg>
+                <span class="btn-map-text">Xem vị trí trên Google Maps</span>
+                <span class="arrow-right">→</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- 5. Real-time Countdown to Graduation Day -->
+          <section class="countdown-section">
+            <h4 class="countdown-title">CÙNG ĐẾM NGƯỢC ĐẾN NGÀY VUI</h4>
+            <div class="countdown-boxes" id="countdownBoxes">
+              <div class="countdown-item">
+                <span class="count-num" id="cdDays">00</span>
+                <span class="count-label">Ngày</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-item">
+                <span class="count-num" id="cdHours">00</span>
+                <span class="count-label">Giờ</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-item">
+                <span class="count-num" id="cdMins">00</span>
+                <span class="count-label">Phút</span>
+              </div>
+              <span class="cd-colon">:</span>
+              <div class="countdown-item">
+                <span class="count-num" id="cdSecs">00</span>
+                <span class="count-label">Giây</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- 6. Warm Concluding Wish & Elegant Handwritten Signature -->
+          <footer class="card-footer">
+            <div class="final-wish">
+              <p class="final-quote">
+                “Sự hiện diện của bạn sẽ là niềm vui và kỷ niệm đáng nhớ đối với mình. 💐”
+              </p>
+            </div>
+
+            <div class="signature-block">
+              <span class="signature-salutation">Trân trọng & Yêu thương,</span>
+              <div class="signature-name">Ngọc Hồng</div>
+              <div class="signature-monogram-seal">
+                <span class="monogram-text">NH</span>
+              </div>
+            </div>
+
+            <!-- Re-open / Close Envelope Utility Button -->
+            <div class="card-bottom-actions">
+              <button type="button" class="btn-replay" id="btnReplay" title="Xem lại hoạt cảnh phong bì">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                <span>Xem lại phong bì</span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
