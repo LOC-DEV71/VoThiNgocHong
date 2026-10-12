@@ -71,6 +71,23 @@ body {
   line-height: 1.6;
 }
 
+.invitation-contact {
+  padding: 0 16px 16px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+
+.invitation-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.invitation-contact a:hover {
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    AMBIENT BACKGROUND FX: GOLD PARTICLES & BLOSSOMS
    ========================================================================== */
